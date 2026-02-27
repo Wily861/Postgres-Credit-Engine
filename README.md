@@ -1,37 +1,44 @@
-# 👋 Proyecto Técnico en PostgreSQL  
+# 🏦 Sistema de Gestión de Créditos: Arquitectura en PostgreSQL
 
-![Bienvenida](https://www.gifcen.com/wp-content/uploads/2021/07/-39.gif)  
-
-Este repositorio contiene el desarrollo de un **caso técnica en PostgreSQL**, donde se modela y simula un sistema de **gestión de créditos**.  
-
----
-### 👤 Autor
-**Wily Duvan Villamil Rey**  
-
-### 📌 Rol
-Administrador de Base de Datos
+> **Caso Técnico de Ingeniería de Datos:** Modelado, automatización y optimización de un ecosistema financiero robusto utilizando PostgreSQL.
 
 ---
 
-## 🛠️ Herramientas utilizadas  
-- **PostgreSQL** → Motor de base de datos relacional utilizado para crear, poblar y consultar la información.  
-- **pgAdmin** → Entorno gráfico de administración para gestionar la base de datos y ejecutar los scripts SQL.  
-- **SQL / PLpgSQL** → Lenguaje utilizado para la creación de tablas, consultas, funciones y triggers.  
-- **GitHub** → Control de versiones y repositorio remoto para compartir el proyecto.
+## 🎯 Objetivo del Proyecto
+Desarrollar una infraestructura de base de datos que garantice la **integridad referencial** y la **consistencia ACID** para un sistema de créditos, implementando lógica de negocio directamente en el motor mediante **PL/pgSQL**.
 
-  --- 
+---
 
-## 📌 Contenido del proyecto  
-- Creación de la base de datos y esquema.  
-- Tablas para clientes, créditos, cronogramas de pago y pagos.  
-- Inserción de datos de prueba (clientes, créditos y pagos simulados).  
-- Consultas de análisis para validar información financiera.  
-- Automatización con triggers y optimización con índices.  
+## 🛠️ Stack Tecnológico
+* **Engine:** PostgreSQL 15+
+* **Environment:** pgAdmin 4 / PSQL
+* **Language:** SQL / PLpgSQL (Stored Procedures & Triggers)
+* **Modeling:** Entidad-Relación (Relational Modeling)
 
-El objetivo es mostrar **buenas prácticas de modelado relacional, integridad referencial y optimización en PostgreSQL**, utilizando **pgAdmin** como entorno de gestión.  
+---
 
-✨ ¡Explora los scripts, ejecútalos en tu entorno local y diviértete aprendiendo!  
+## 📂 Arquitectura y Contenido Técnico
 
+### 1. Modelado de Datos (Esquema Relacional)
+Diseño de tablas normalizadas para asegurar la escalabilidad:
+* **Core:** Clientes, Créditos y Cronogramas de Pago.
+* **Transaccional:** Gestión de Pagos e histórico de movimientos.
+
+### 2. Automatización & Business Logic
+Implementación de **Triggers y Funciones (PL/pgSQL)** para:
+* Cálculo automático de saldos e intereses.
+* Validación de estados de crédito en tiempo real.
+* Generación dinámica de cronogramas de pago.
+
+### 3. Optimización de Performance
+* **Indexación Estratégica:** Implementación de índices B-Tree para acelerar consultas financieras de alto volumen.
+* **Integridad:** Constraints avanzadas (`CHECK`, `FOREIGN KEY`, `NOT NULL`) para evitar la corrupción de datos financieros.
+
+### 4. Análisis de Datos
+Scripts de consulta avanzados para:
+* Reporteo de cartera vencida.
+* Análisis de comportamiento de pagos por cliente.
+* Validación de consistencia financiera.
 --- 
 
 ## Creación base de datos
