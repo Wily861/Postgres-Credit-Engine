@@ -1,4 +1,4 @@
--- 4. Crear tabla de cronograma de pagos (cuotas)
+-- 5. Crear tabla de cronograma de pagos (cuotas)
 CREATE TABLE IF NOT EXISTS core.payment_schedule (
   schedule_id BIGSERIAL PRIMARY KEY,
   credito_id  BIGINT NOT NULL REFERENCES core.creditos(credito_id),
