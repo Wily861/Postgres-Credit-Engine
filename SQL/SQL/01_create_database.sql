@@ -1,2 +1,0 @@
--- Creación base de datos
-CREATE DATABASE roda_test;
