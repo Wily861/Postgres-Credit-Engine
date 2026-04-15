@@ -19,28 +19,24 @@ Desarrollar una infraestructura de base de datos de alto rendimiento que garanti
 
 ## 📂 Estructura del Proyecto
 
-Los recursos están organizados en un pipeline secuencial. **Haz clic en cada archivo para ver su código fuente:**
+Los recursos están organizados en un pipeline secuencial. **Haz clic en cada archivo para acceder al código fuente:**
 
-```text
-/
-├── README.md
-└── scripts/
-    ├── 📄 [01_create_database.sql](scripts/01_create_database.sql)
-    ├── 📄 [02_create_schemas.sql](scripts/02_create_schemas.sql)
-    ├── 📄 [03_create_tables.sql](scripts/03_create_tables.sql)
-    ├── 📄 [04_create_loans_table.sql](scripts/04_create_loans_table.sql)
-    ├── 📄 [05_create_payments_table.sql](scripts/05_create_payments_table.sql)
-    ├── 📄 [06_create_amortization_schedule_table.sql](scripts/06_create_amortization_schedule_table.sql)
-    ├── 📄 [07_insert_initial_data.sql](scripts/07_insert_initial_data.sql)
-    ├── 📄 [08_insert_customer_loans.sql](scripts/08_insert_customer_loans.sql)
-    ├── 📄 [09_queries_and_results.sql](scripts/09_queries_and_results.sql)
-    ├── 📄 [10_tasks.sql](scripts/10_tasks.sql)
-    ├── 📄 [11_triggers_and_indexes.sql](scripts/11_triggers_and_indexes.sql)
-    ├── 📄 [12_initialize_existing_values.sql](scripts/12_initialize_existing_values.sql)
-    ├── 📄 [13_create_functions_and_triggers.sql](scripts/13_create_functions_and_triggers.sql)
-    ├── 📄 [14_payment_processing_logic.sql](scripts/14_payment_processing_logic.sql)
-    ├── 📄 [15_create_indexes.sql](scripts/15_create_indexes.sql)
-    └── 📄 [16_applied_performance_indexes.sql](scripts/16_applied_performance_indexes.sql)
+* **[`scripts/01_create_database.sql`](./scripts/01_create_database.sql)** - Inicialización de la instancia.
+* **[`scripts/02_create_schemas.sql`](./scripts/02_create_schemas.sql)** - Aislamiento de capas (Core, Security, Audit).
+* **[`scripts/03_create_tables.sql`](./scripts/03_create_tables.sql)** - Definición de estructuras base.
+* **[`scripts/04_create_loans_table.sql`](./scripts/04_create_loans_table.sql)** - Gestión de entidades de crédito.
+* **[`scripts/05_create_payments_table.sql`](./scripts/05_create_payments_table.sql)** - Registro de transacciones monetarias.
+* **[`scripts/06_create_amortization_schedule_table.sql`](./scripts/06_create_amortization_schedule_table.sql)** - Plan de pagos programado.
+* **[`scripts/07_insert_initial_data.sql`](./scripts/07_insert_initial_data.sql)** - Datos maestros y catálogos.
+* **[`scripts/08_insert_customer_loans.sql`](./scripts/08_insert_customer_loans.sql)** - Inserción de cartera activa.
+* **[`scripts/09_queries_and_results.sql`](./scripts/09_queries_and_results.sql)** - Reportes y validación de lógica.
+* **[`scripts/10_tasks.sql`](./scripts/10_tasks.sql)** - Tareas de mantenimiento MVP.
+* **[`scripts/11_triggers_and_indexes.sql`](./scripts/11_triggers_and_indexes.sql)** - Optimizaciones y automatización inicial.
+* **[`scripts/12_initialize_existing_values.sql`](./scripts/12_initialize_existing_values.sql)** - Sincronización de saldos históricos.
+* **[`scripts/13_create_functions_and_triggers.sql`](./scripts/13_create_functions_and_triggers.sql)** - Funciones core de negocio y auditoría.
+* **[`scripts/14_payment_processing_logic.sql`](./scripts/14_payment_processing_logic.sql)** - Motor de actualización automática de saldos.
+* **[`scripts/15_create_indexes.sql`](./scripts/15_create_indexes.sql)** - Estrategia de indexación avanzada.
+* **[`scripts/16_applied_performance_indexes.sql`](./scripts/16_applied_performance_indexes.sql)** - Índices de alto rendimiento para producción.
 --- 
 
 ## 5) Plan de Transición de Desarrollo a Producción
