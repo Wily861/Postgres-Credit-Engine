@@ -1,4 +1,4 @@
--- 2. Crear tabla de clientes
+-- 3. Crear tabla de clientes
 CREATE TABLE IF NOT EXISTS core.clientes (
   cliente_id BIGSERIAL PRIMARY KEY,
   tipo_doc   TEXT NOT NULL,
