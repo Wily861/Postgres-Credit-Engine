@@ -7,6 +7,8 @@ SELECT COUNT(*) FROM core.payment_schedule;
 -- 3 Contar pagos
 SELECT COUNT(*) FROM core.pagos;
 
+
+
 /* ============================================================
    Validación de pagos (máx. 10 registros variados)
    Objetivo:
