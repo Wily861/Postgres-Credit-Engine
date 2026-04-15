@@ -61,3 +61,22 @@ CREATE OR REPLACE TRIGGER trg_actualizar_saldo_y_estado
 AFTER INSERT OR UPDATE ON core.pagos
 FOR EACH ROW
 EXECUTE FUNCTION core.fn_actualizar_saldo_y_estado();
+
+
+
+
+
+
+
+-- ============================================================
+-- 4. Prueba de inserción y verificación de resultado
+-- ============================================================
+
+-- Simular un pago
+INSERT INTO core.pagos (schedule_id, monto, fecha_pago)
+VALUES (1, 100000, CURRENT_DATE);
+
+-- Verificar el resultado actualizado
+SELECT schedule_id, valor_cuota, saldo_pendiente, estado, fecha_vencimiento
+FROM core.payment_schedule
+WHERE schedule_id = 1;
