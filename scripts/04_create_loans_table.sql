@@ -1,4 +1,4 @@
--- 3. Crear tabla de créditos
+-- 4. Crear tabla de créditos
 CREATE TABLE IF NOT EXISTS core.creditos (
   credito_id BIGSERIAL PRIMARY KEY,
   cliente_id BIGINT NOT NULL REFERENCES core.clientes(cliente_id),
